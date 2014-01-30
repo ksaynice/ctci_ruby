@@ -1,4 +1,5 @@
 ctci_solutions
 ==============
 
-Solutions to Cracking the coding interview 
+Solutions for "Cracking the Coding Interview v5" in Ruby
+Due to copyrights , the questions themselves are not published
