@@ -13,5 +13,22 @@ def has_all_unique_chars_no_ds(input_sting)
   true
 end
 
-p has_all_unique_chars_no_ds "woca"
-p has_all_unique_chars_no_ds "wocacacaca"
+teststringtrue = "woca"
+teststringfalse = "wocacacaca"
+
+funclist = ["has_all_unique_chars_no_ds"]
+
+funclist.each do |f|
+  puts ">>> Testing function -#{f}- <<<"
+  if send(f, teststringtrue)
+    puts "√ True test case on -#{f}- passed"
+  else
+    puts "× True test case on -#{f}- failed"
+  end
+
+  unless send(f, teststringfalse)
+    puts "√ False test case on -#{f}- passed"
+  else
+    puts "× False test case on -#{f}- passed"
+  end
+end
